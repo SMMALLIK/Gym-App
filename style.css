@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  position: fixed;
+  z-index: 12;
+  color: white;
+  background-color: black;
+}
+nav h2 {
+  cursor: pointer;
+  font-size: 1.6vw;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+ul li {
+  list-style: none;
+  color: white;
+}
+ul li a {
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+ul li a:hover {
+  border-bottom: 2px solid white;
+}
+ul button {
+  font-size: 18px;
+  padding: 3px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+ul button:hover {
+  border: 2px solid red;
+  background: transparent;
+}
+/* ----------------------------Join Form */
+.Join-form{
+  width: 220px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: white;
+  display: none;
+}
+.Join-form input{
+  width: 80%;
+  height: 30px;
+}
+.Join-form button{
+  font-size: 1.2vw;
+  padding: 3px 30px;
+  color: white;
+  background-color: #04b208;
+}
+/* --------------------ShowHide javascript */
+.ShowHide{
+  display: flex;
+}
+/* ----------------------------Main */
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: bisque; */
+}
+.main1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 100px;
+  /* background-color: brown; */
+}
+.main1 h1 {
+  color: #04b208;
+  font-size: 4.2vw;
+  margin-top: 100px;
+}
+.main1 h2 {
+  color: white;
+  font-size: 2.2vw;
+}
+.main1 span {
+  font-size: 1.2vw;
+}
+.main1 a {
+  width: 130px;
+  font-size: 1.3vw;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  color: white;
+  background-color: #04b208;
+}
+.main2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: thistle; */
+}
+.main2 img {
+  width: 35vw;
+  height: 100%;
+  /* background-color: red; */
+}
+/* --------------------------------------SECTION */
+.section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  /* background-color: aquamarine; */
+}
+.section1 h2 {
+  font-size: 2.3vw;
+  margin-top: 100px;
+  color: white;
+}
+.section1 h2 > span {
+  color: red;
+}
+.training {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* background-color: blueviolet; */
+}
+.training-card {
+  width: 320px;
+  height: 320px;
+  color: white;
+  background-color: #464646;
+}
+.training-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.card-dets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.training-card h3 {
+  font-size: 1.4vw;
+  margin: 12px 10px;
+}
+.training-card span {
+  margin: 8px 10px;
+}
+.training-card a {
+  width: 40%;
+  font-size: 1.1vw;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 6px 10px;
+  color: white;
+  background-color: red;
+}
+.training-card a:hover {
+  border: 2px solid red;
+  background: transparent;
+}
+/* ---------------------------------section2 */
+.section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 70px;
+}
+.section2 h2 {
+  font-size: 2.3vw;
+  margin-top: 100px;
+  color: white;
+}
+.section2 h2 > span {
+  color: red;
+}
+.section2-flex {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* background-color: blueviolet; */
+}
+.section2-box {
+  width: 58vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  /* background-color: red; */
+  position: relative;
+  /* transition: all ease 0.10s; */
+}
+.section2-box img {
+  transition: all ease 0.10s;
+  width: 30%;
+  height: 80%;
+  object-fit: cover;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn button{
+  font-size: 20px;
+  padding: 4px 30px;
+  font-weight: 600;
+  color: red;
+  background-color: blue;
+}
+/* ---------------------------------section3 */
+.section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.section3 h2 {
+  font-size: 2.3vw;
+  margin-top: 100px;
+  color: white;
+}
+.section3 h2 > span {
+  color: red;
+}
+.section3-flex {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* background-color: blueviolet; */
+}
+.section3-box {
+  width: 18vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all ease 0.8s;
+  /* background-color: red; */
+}
+.section3-box h3{
+  color: white;
+}
+.section3-box:hover {
+  height: 53vh;
+  
+}
+.section3-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ---------------------------------section4 */
+.section4 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.section4 h2 {
+  font-size: 2.3vw;
+  margin-top: 50px;
+  color: white;
+}
+.section4 h2 > span {
+  color: red;
+}
+.connect-inpt{
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* background-color: #04b208; */
+}
+.connect-inpt input{
+  width: 80%;
+  height: 40px;
+  font-size: 1.2vw;
+}
+.connect-inpt button{
+  font-size: 1.5vw;
+  padding: 5px 40px;
+  color: white;
+  background-color: #04b208;
+}
+/* -----------------------------footer */
+footer{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: silver;
+}
+footer h3{
+  font-size: 1.5vw;
+}
+.about-list span{
+  font-size: 1.5vw;
+}
+.footer-list span{
+  font-size: 1.5vw;
+}
+.about-list{
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
